@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+
+  "name": "YouTube Study Tracker",
+
+  "version": "1.0",
+
+  "description": "Track YouTube study hours",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+
+      "js": ["content.js"]
+    }
+  ]
+}
