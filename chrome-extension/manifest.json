@@ -5,13 +5,28 @@
 
   "version": "1.0",
 
-  "description": "Track YouTube study hours",
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:5000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
 
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
 
-      "js": ["content.js"]
+      "js": [
+        "content.js"
+      ]
     }
   ]
 }
