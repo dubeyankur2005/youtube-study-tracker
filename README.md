@@ -1,140 +1,192 @@
-# YouTube Study Tracker 📚🎥
+# YouTube Study Tracker
 
-A Chrome Extension that monitors YouTube activity and tracks study time separately from other content.
+A Chrome Extension + React Dashboard that tracks YouTube watch time and classifies videos into **Study 📚** and **Entertainment 🎮** categories.
 
-## 🚀 Project Goal
-
-Build a productivity tool that tracks:
-
-* YouTube video title
-* YouTube video URL
-* Video play activity
-* Video pause activity
-* Total watch time
-
-Future versions will categorize videos into:
-
-* 📚 Study Videos
-* 🎬 Entertainment Videos
-
-and generate daily and weekly analytics.
+The application automatically monitors YouTube videos, stores watch history, and displays analytics in a modern dashboard.
 
 ---
 
-## 🏗️ Technologies Used
+##  Features
 
-* JavaScript
-* Chrome Extension (Manifest V3)
+*  Tracks YouTube videos automatically
+*  Measures watch time
+*  Detects Study videos
+*  Detects Entertainment videos
+*  Stores watch history
+*  Displays analytics dashboard
+*  Real-time updates
+*  Chrome Extension integration
+*  Fast React UI
 
-Upcoming:
+---
 
-* React
+##  Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Axios
+* CSS3
+
+### Backend
+
 * Node.js
 * Express.js
-* MongoDB
+
+### Browser Extension
+
+* Chrome Extension (Manifest V3)
+
+### Data Storage
+
+* JSON (`videos.json`)
 
 ---
 
-## ✅ Day 1 - Chrome Extension Setup & YouTube Data Detection
+## 📂 Project Structure
 
-### Features Implemented
+```text
+youtube-study-tracker/
 
-* Created the Chrome Extension project structure.
-* Configured `manifest.json`.
-* Added `content.js`.
-* Loaded the extension in Chrome.
-* Detected YouTube video title.
-* Detected YouTube video URL.
-* Understood YouTube Single Page Application (SPA) behavior.
+backend/
 
-### Current Flow
+├── server.js
+├── videos.json
+├── package.json
 
-Open YouTube
+frontend/
 
-↓
+├── src/
+│   ├── App.jsx
+│   └── App.css
 
-Chrome reads `manifest.json`
+chrome-extension/
 
-↓
-
-Run `content.js`
-
-↓
-
-Get video title
-
-↓
-
-Get video URL
+├── content.js
+└── manifest.json
+```
 
 ---
 
-## ✅ Day 2 - Video Activity Detection & Watch Time Tracking
+## ⚙️ Installation
 
-### Features Implemented
+### 1️⃣ Clone Repository
 
-* Detected the YouTube video element.
-* Detected when a video starts playing.
-* Detected when a video is paused.
-* Implemented watch-time tracking.
-* Calculated total watch time.
-* Fixed the `NaN` issue.
+```bash
+git clone https://github.com/dubeyankur2005/youtube-study-tracker.git
 
-### Current Flow
-
-Open Video
-
-↓
-
-Get Title
-
-↓
-
-Get URL
-
-↓
-
-Detect Play
-
-↓
-
-Start Timer
-
-↓
-
-Detect Pause
-
-↓
-
-Stop Timer
-
-↓
-
-Calculate Watch Time
+cd youtube-study-tracker
+```
 
 ---
 
-## 📌 Current Progress
+## 2️⃣ Backend Setup
 
-* [x] Chrome Extension Setup
-* [x] Detect Video Title
-* [x] Detect Video URL
-* [x] Detect Play Event
-* [x] Detect Pause Event
-* [x] Track Watch Time
+```bash
+cd backend
 
----
+npm install
 
-## 🎯 Upcoming Features
+node server.js
+```
 
-* Detect video changes automatically.
-* Handle YouTube SPA navigation.
-* Save data to a backend.
-* Store data in MongoDB.
-* Build React analytics dashboard.
-* Categorize Study vs Entertainment videos.
+Backend runs on:
+
+```text
+http://localhost:5000
+```
 
 ---
 
-Created as a personal productivity project to monitor YouTube study habits.
+## 3️⃣ Frontend Setup
 
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 4️⃣ Chrome Extension Setup
+
+Open:
+
+```text
+chrome://extensions
+```
+
+Enable:
+
+```text
+Developer Mode
+```
+
+Click:
+
+```text
+Load unpacked
+```
+
+Select the:
+
+```text
+chrome-extension
+```
+
+folder.
+
+---
+
+## 🎯 How It Works
+
+1. User opens YouTube.
+2. The Chrome extension detects the video.
+3. Watch time is tracked.
+4. The video is categorized as Study or Entertainment.
+5. Data is sent to the Node.js backend.
+6. The backend stores the data inside `videos.json`.
+7. React displays the analytics dashboard.
+
+---
+
+## 📈 Future Improvements
+
+* 📊 Pie Chart Analytics
+* 📈 Weekly Graph
+* 🏆 Most Watched Category
+* 🔥 Study Streak Counter
+* 📅 Daily Reports
+* 📥 Export CSV
+
+---
+
+## 🧠 Learning Outcomes
+
+Through this project, I learned:
+
+* React.js
+* Node.js
+* Express.js
+* Chrome Extension Development
+* REST APIs
+* Fetch API
+* Axios
+* Frontend and Backend Integration
+
+---
+
+## 👨‍💻 Author
+
+Ankur Dubey
+
+⭐ If you like this project, give it a star.
