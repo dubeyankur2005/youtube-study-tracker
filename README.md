@@ -184,6 +184,22 @@ Through this project, I learned:
 * Frontend and Backend Integration
 
 ---
+## 📸 Screenshots
+
+### 📊 Dashboard
+
+![Dashboard] <img width="1920" height="1080" alt="Screenshot (305)" src="https://github.com/user-attachments/assets/77e2aae7-b2e4-4ab6-819c-6337061144ba" />
+
+--
+
+
+---
+
+### 🎥 Video Tracking
+
+![Tracking] -<img width="1920" height="1080" alt="Screenshot (307)" src="https://github.com/user-attachments/assets/4a871ccf-0da2-4a94-8bd7-88d336e1c20f" />
+<img width="1920" height="1080" alt="Screenshot (306)" src="https://github.com/user-attachments/assets/454d2605-ec01-4def-8799-cd65ec06a8ca" />
+
 
 ## 👨‍💻 Author
 
